@@ -7,6 +7,24 @@
     <title>Blue Screen of Death!</title>
     <meta name="description" content="Blue Screen of Death!">
     <style>
+        @keyframes scaleUp {
+            from {
+                transform: scale(0.8);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
         body {
             margin: 0;
             padding: 0;
@@ -24,17 +42,21 @@
         h1 {
             margin-bottom: 20px;
             font-size: 3em;
+            animation: scaleUp 1s ease-out forwards;
+            will-change: transform;
         }
 
         p {
             margin: 0 0 20px;
             font-size: 1.2em;
             max-width: 800px;
+            animation: slideUp 1.5s ease-out forwards;
+            will-change: transform;
         }
     </style>
 </head>
 <body>
-    <h1>Blue Screen of Death!</h1>
-    <p role="contentinfo">Your computer ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you.</p>
+<h1>Senpai! Your PC-chan had a meltdown!</h1>
+<p role="contentinfo">B-baka! It's not like I wanted to crash or anything... I'm just trying to gather my thoughts, and then I promise I'll be back for you, okay?</p>
 </body>
 </html>
